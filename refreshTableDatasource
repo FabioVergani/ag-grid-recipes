@@ -1,0 +1,10 @@
+    refreshTableDatasource = () => {
+        try {
+            const api = this.gridApi.api;
+            api.setDatasource(
+                api.gridOptionsWrapper.gridOptions.datasource
+            );
+        } catch (e) {
+            console.error(e);
+        }
+    };
